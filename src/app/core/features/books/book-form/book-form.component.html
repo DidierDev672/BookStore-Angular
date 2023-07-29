@@ -1,0 +1,24 @@
+<div class="container mx-auto px-4 my-4">
+    <h2 class="text-2xl font-bold mb-4">Formulario de Libro</h2>
+    <form (submit)="onSubmit()">
+      <div class="mb-4">
+        <label for="title" class="block text-sm font-medium text-gray-700">Título</label>
+        <input type="text" id="title" name="title" [(ngModel)]="book.title" class="form-input mt-1 block w-full">
+      </div>
+      <div class="mb-4">
+        <label for="author" class="block text-sm font-medium text-gray-700">Autor</label>
+        <input type="text" id="author" name="author" [(ngModel)]="book.author" class="form-input mt-1 block w-full">
+      </div>
+      <div class="mb-4">
+        <label for="genre" class="block text-sm font-medium text-gray-700">Género</label>
+        <input type="text" id="genre" name="genre" [(ngModel)]="book.genre" class="form-input mt-1 block w-full">
+      </div>
+      <div class="mb-4">
+        <label for="description" class="block text-sm font-medium text-gray-700">Descripción</label>
+        <textarea id="description" name="description" [(ngModel)]="book.description" class="form-textarea mt-1 block w-full"></textarea>
+      </div>
+      <div class="mt-4">
+        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Guardar Libro</button>
+      </div>
+    </form>
+  </div>
